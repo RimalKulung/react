@@ -1,5 +1,5 @@
 import conf from '../conf/conf'
-import { Client, Account, ID, Databases, Storage, Query } from "appwrite";
+import { Client, ID, Databases, Storage, Query } from "appwrite";
 
 export class Service{
     client = new Client()
@@ -7,8 +7,8 @@ export class Service{
     bucket;
     constructor(){
         this.client
-            setEndpoint(conf.appwriteUrl)
-            setEndpoint(conf.appwriteProjectId);
+            .setEndpoint(conf.appwriteUrl)
+            .setEndpoint(conf.appwriteProjectId);
             this.databases = new Databases(this.client)
             this.bucket = new Storage(this.client)
     }
@@ -32,7 +32,7 @@ export class Service{
         }
     }
 
-    async updatePost(slug, {title, slug ,content, featuredImage, status}){
+    async updatePost(slug, {title,content, featuredImage, status}){
         try {
              return await this.databases.updateDocument(
                 conf.appwriteDatabaseId,
