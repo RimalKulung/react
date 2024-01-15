@@ -78,15 +78,7 @@ function Signup() {
                         type='submit'
                         className='w-full'
                     >Sign in</Button>
-                    <Input
-                        label='Password:'
-                        type='password'
-                        placeholder="Enter your Password"
-                        {...register('password',{
-                            required: true,
-                        })}
-                    />
-                    <Button type='submit' className='w-full'>Create Accout</Button>
+                
                     </div>
                 </form>
             </div>
