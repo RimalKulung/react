@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import { Nav,Home,Swipper } from './components/index'
+import { Nav,Home,Swipper, Services } from './components/index'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -10,6 +10,7 @@ function App() {
       <Nav/>
       <Home/>
       <Swipper/>
+      <Services/>
     </>
   )
 }

@@ -14,7 +14,7 @@ import { Navigation } from "swiper/modules";
 export default function Swipper() {
   return (
     <>
-      <div className="w-full h-[100vh]">
+      <div className="w-full h-[90vh] flex justify-center items-center">
         <Swiper
           navigation={true}
           modules={[Navigation]}
